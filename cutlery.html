@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cutlery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Playfair+Display:wght@500&family=Poppins&family=Righteous&display=swap" rel="stylesheet"> 
+  <style>
+        *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    
+    body{
+      font-family: 'Poppins', cursive;
+      color:white;
+      background-color:black;
+    }
+    
+       
+  
+     .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+  
+        .container::before {
+            content: '';
+            background: url('cutlerybg.jpg') 
+                no-repeat center center/cover;
+           position: absolute;
+            opacity: 0.9;
+            filter: brightness(25%);
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+    
+    .container h1{
+      color:white;
+      font-size:4rem;
+    }
+    
+    
+    .card{
+      display:block;
+      height:70vh;
+      width:90%;
+      margin: 10vh auto;
+      border-radius:60px;
+      background-color:#22222b;
+    }
+    
+    .card img{
+      height:40%;
+      width:100%;
+      border-radius:60px 60px 0 0;
+      filter:brightness(50%);
+    }
+    
+    .text{
+      text-align:center;
+      padding:30px;
+    }
+    
+    .card h3{
+      margin:1rem 0 1rem 0;
+      font-size:2.1rem;
+    }
+    
+    .card p{
+      margin-bottom:3vh;
+      color:#a1a1a1;
+      font-size:1.1rem;
+    }
+    
+    footer{
+      height:10vh;
+      width:100%;
+      background-color:#0f1227;
+      text-align:center;
+      font-size:1.2rem;
+      display:flex;
+      align-items:center;
+      Justify-content:center;
+    }
+   
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  background-color:black;
+  height:10vh;
+  align-items:center;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#22222b;
+}
+  </style>
+</head>
+<body>
+  
+   <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul> 
+
+    <div class="container">
+    <h1>Cutlery.co</h1>
+  </div>
+  
+  <div class="card">
+    
+    <!--img inside the card-->
+    <img src="cutlerycard1.jpg" alt="">
+    
+    <div class="text">
+      <h3>Get your cutlery</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, velit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    </div>
+    </div>
+      <div class="card">
+    
+    <!--img inside the card-->
+    <img src="cutlerycard2.jpg" alt="">
+    
+    <div class="text">
+      <h3>Buy here</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ab quibusdam veniam distinctio.</p>
+    </div>
+  </div>
+  
+  <footer>
+    &copy copyright all rights reserved
+  </footer>
+</body>
+</html>
+
